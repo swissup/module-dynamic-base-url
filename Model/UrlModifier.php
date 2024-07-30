@@ -13,8 +13,13 @@ class UrlModifier
 
     public function execute($url, $mode)
     {
+        $dynamicHost = $this->request->getServer('HTTP_HOST');
+        if (!$dynamicHost) {
+            return $url;
+        }
+
         $host = parse_url($url, PHP_URL_HOST);
-        $url = str_replace($host, $this->request->getServer('HTTP_HOST'), $url);
+        $url = str_replace($host, $dynamicHost, $url);
 
         if ($this->request->isSecure() && strpos($url, 'http://') === 0) {
             $url = 'https://' . substr($url, 7);
