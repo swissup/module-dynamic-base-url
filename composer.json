@@ -2,7 +2,7 @@
     "name": "swissup/module-dynamic-base-url",
     "description": "Serve Magento via multiple base URLs. Useful for Ngrok, Expose, and similar services.",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "license": "MIT",
     "autoload": {
         "files": [
