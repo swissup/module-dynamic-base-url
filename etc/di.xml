@@ -8,4 +8,7 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Framework\View\Element\AbstractBlock">
+        <plugin name="swissup_dynamic_base_url" type="Swissup\DynamicBaseUrl\Plugin\AbstractBlockCacheKey"/>
+    </type>
 </config>
