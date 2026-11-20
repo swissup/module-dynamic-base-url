@@ -11,4 +11,7 @@
     <type name="Magento\Framework\View\Element\AbstractBlock">
         <plugin name="swissup_dynamic_base_url" type="Swissup\DynamicBaseUrl\Plugin\AbstractBlockCacheKey"/>
     </type>
+    <type name="Magento\Backend\App\Area\FrontNameResolver">
+        <plugin name="swissup_dynamic_base_url" type="Swissup\DynamicBaseUrl\Plugin\FrontNameResolver"/>
+    </type>
 </config>
